@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🎤 Voice Notes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎤 Voice Notes App</h1>
+
+    <input type="text" id="noteTitle" placeholder="Enter note title..." />
+    <textarea id="noteContent" placeholder="Speak or type your note here..."></textarea>
+
+    <div class="buttons">
+      <button onclick="startListening()">🎙️ Speak</button>
+      <button onclick="saveNote()">💾 Save</button>
+    </div>
+
+    <h2>📂 Saved Notes</h2>
+    <ul id="notesList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
